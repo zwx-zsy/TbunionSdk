@@ -1,7 +1,7 @@
 package top_test
 
 import (
-	"TbunionSdk/top"
+	"github.com/yancyzhou/TbunionSdk/top"
 	"fmt"
 	"log"
 	"testing"

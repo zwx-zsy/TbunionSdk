@@ -1,7 +1,7 @@
 package top
 
 import (
-	"TbunionSdk/top/requests"
+	"github.com/yancyzhou/TbunionSdk/top/requests"
 	"encoding/json"
 )
 

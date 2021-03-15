@@ -1,6 +1,6 @@
 package top
 
-import "TbunionSdk/top/requests"
+import "github.com/yancyzhou/TbunionSdk/top/requests"
 
 func TaobaoTbkItemInfoGetRequest() *requests.TaobaoTbkItemInfoGet {
 	var r requests.TaobaoTbkItemInfoGet

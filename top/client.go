@@ -1,7 +1,7 @@
 package top
 
 import (
-	"TbunionSdk/top/requests"
+	"github.com/yancyzhou/TbunionSdk/top/requests"
 	"bytes"
 	"crypto/md5"
 	"encoding/hex"
