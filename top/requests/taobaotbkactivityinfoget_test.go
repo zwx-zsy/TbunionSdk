@@ -13,8 +13,8 @@ func TestTaobaoTbkActivityInfoGet(t *testing.T) {
 	c.AppSecret = top.AppSecret
 
 	req := top.TaobaoTbkActivityInfoGetRequest()
-	req.SetParam("adzone_id", "107356100348")
-	req.SetParam("activity_material_id", "20150318020002040")
+	req.SetParam("adzone_id", "111563200399")
+	req.SetParam("activity_material_id", "20150318020002597")
 	body, err := c.Exec(req)
 	if err != nil {
 		t.Error(err)
