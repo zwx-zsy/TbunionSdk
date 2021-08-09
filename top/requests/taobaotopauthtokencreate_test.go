@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/iszhange/lubansdk/top"
+	"github.com/yancyzhou/TbunionSdk/top"
 )
 
 func TestTaobaoTopAuthTokenCreate(t *testing.T) {
@@ -13,7 +13,7 @@ func TestTaobaoTopAuthTokenCreate(t *testing.T) {
 	c.AppSecret = top.AppSecret
 
 	req := top.TaobaoTopAuthTokenCreateRequest()
-	req.SetParam("code", "7oBgi6L31Vr1Gk9wbT7T4Naf9071114")
+	req.SetParam("code", "RHc7jlrZsm9OKFoDIts84Oa27388846")
 	body, err := c.Exec(req)
 	if err != nil {
 		t.Error(err)

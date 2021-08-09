@@ -1,21 +1,19 @@
-package requests_test
+package requests
 
 import (
 	"fmt"
-	"testing"
-
 	"github.com/yancyzhou/TbunionSdk/top"
+	"testing"
 )
 
-func TestTaobaoTbkScVegasSendReport(t *testing.T) {
+func TestTaobaoTbkTpwdConvert(t *testing.T) {
 	c := top.New()
 	c.AppKey = top.AppKey
 	c.AppSecret = top.AppSecret
-	c.Session = "6202a07eb63bfbbdf74dcdd7a74219930d4046114b8718a527712929"
 
-	req := top.TaobaoTbkScVegasSendReportRequest()
-	req.SetParam("biz_date", "20201101")
-	req.SetParam("activity_id", "1306")
+	req := top.TaobaoTbkTpwdConvertRequest()
+	req.SetParam("password_content", "0/ej31XiOw87M/:/")
+	req.SetParam("adzone_id", "111470550243")
 	body, err := c.Exec(req)
 	if err != nil {
 		t.Error(err)

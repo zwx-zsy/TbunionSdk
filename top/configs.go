@@ -1,6 +1,8 @@
 package top
 
 var (
-	AppKey    = "3024068"
-	AppSecret = "710726c027fc610f0bb50e6a8e46f7"
+	AppKey    = "32832262"
+	AppSecret = "5602c8f7f36b9e3b189d7be7805b1128"
+	//AppKey    = "32821783"
+	//AppSecret = "0fc664e7785a33e71ca107151666177f"
 )

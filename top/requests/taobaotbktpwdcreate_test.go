@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/iszhange/lubansdk/top"
+	"github.com/yancyzhou/TbunionSdk/top"
 )
 
 func TestTaobaoTbkTpwdCreate(t *testing.T) {

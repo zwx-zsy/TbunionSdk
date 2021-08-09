@@ -202,16 +202,27 @@ type TaobaoTbkSpreadGetResponse struct {
 	RequestID    string `json:"request_id"`
 }
 
+//type TaobaoTbkActivityInfoGetResponse struct {
+//	Data struct {
+//		ClickURL       string `json:"click_url"`
+//		MaterialOssURL string `json:"material_oss_url"`
+//		PageEndTime    string `json:"page_end_time"`
+//		PageName       string `json:"page_name"`
+//		PageStartTime  string `json:"page_start_time"`
+//		TerminalType   string `json:"terminal_type"`
+//	} `json:"data"`
+//	RequestID string `json:"request_id"`
+//}
 type TaobaoTbkActivityInfoGetResponse struct {
-	Data struct {
-		ClickURL       string `json:"click_url"`
-		MaterialOssURL string `json:"material_oss_url"`
-		PageEndTime    string `json:"page_end_time"`
-		PageName       string `json:"page_name"`
-		PageStartTime  string `json:"page_start_time"`
-		TerminalType   string `json:"terminal_type"`
-	} `json:"data"`
-	RequestID string `json:"request_id"`
+	TbkActivityInfoGetResponse struct {
+		Data struct {
+			ClickUrl          string `json:"click_url"`
+			ShortClickUrl     string `json:"short_click_url"`
+			WxMiniprogramPath string `json:"wx_miniprogram_path"`
+			WxQrcodeUrl       string `json:"wx_qrcode_url"`
+		} `json:"data"`
+		RequestId string `json:"request_id"`
+	} `json:"tbk_activity_info_get_response"`
 }
 
 type TaobaoTbkDgVegasTljCreateResponse struct {
@@ -500,6 +511,16 @@ type TaobaoTbkTpwdCreateResponse struct {
 	RequestID string `json:"request_id"`
 }
 
+type TaobaoTbkTpwdConvertResponse struct {
+	Data struct {
+		NumIid    string `json:"num_iid"`
+		ClickUrl  string `json:"click_url"`
+		SellerId  string `json:"seller_id"`
+		OriginUrl string `json:"origin_url"`
+		OriginPid string `json:"origin_pid"`
+	} `json:"data"`
+	RequestID string `json:"request_id"`
+}
 type TaobaoTbkDgPunishOrderGetResponse struct {
 	Result struct {
 		BizErrorCode int `json:"biz_error_code"`
