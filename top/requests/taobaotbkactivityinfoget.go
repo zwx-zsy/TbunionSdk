@@ -25,7 +25,7 @@ func (o TaobaoTbkActivityInfoGet) Result(data []byte) (TaobaoTbkActivityInfoGetR
 	if err != nil {
 		return TaobaoTbkActivityInfoGetResponse{}, err
 	}
-	if result.RequestID == "" {
+	if result.TbkActivityInfoGetResponse.RequestId == "" {
 		return TaobaoTbkActivityInfoGetResponse{}, API_RESPONSE_ERROR
 	}
 
